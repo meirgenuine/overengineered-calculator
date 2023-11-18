@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package division;
+
+option go_package = "github.com/meirgenuine/overengineered-calculator/division-service/proto;division";
+
+// The Division service definition.
+service DivisionService {
+    // Sends a request to divide one number by another
+    rpc Divide(DivisionRequest) returns (DivisionResponse);
+}
+
+message DivisionRequest {
+    double num1 = 1;
+    double num2 = 2;
+}
+
+message DivisionResponse {
+    double result = 1;
+}
