@@ -1,7 +1,7 @@
 # Overengineered Calculator
 
 ## Overview
-This project is an overengineered calculator designed to demonstrate advanced backend engineering skills using microservices architecture. Technologies used include Go, gRPC, REST API, Docker, Kubernetes, RabbitMQ, and more.
+This project serves as an educational showcase, presenting an overengineered calculator to illustrate the application of common backend engineering technologies within a microservices architecture. Its primary purpose is educational, employing a straightforward business logic — a basic calculator — as a vehicle to demonstrate the intricate workings and integration of various advanced technologies. The project encompasses Go, gRPC, REST API, Docker, Kubernetes, RabbitMQ, and more, thus offering a comprehensive insight into backend development practices. Through this project, the simplicity of a calculator's functionality is transformed into a complex system, aiming to provide a practical learning experience in modern software engineering techniques and tools.
 
 ## Services
 - **API Gateway**: The entry point for the application, routing requests to the appropriate microservices.
