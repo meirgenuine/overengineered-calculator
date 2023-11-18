@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package multiplication;
+
+option go_package = "github.com/meirgenuine/multiplication-service/proto;multiplication";
+
+// The Multiplication service definition.
+service MultiplicationService {
+    // Sends a request to multiply two numbers
+    rpc Multiply(MultiplicationRequest) returns (MultiplicationResponse) {}
+}
+
+message MultiplicationRequest {
+    double num1 = 1;
+    double num2 = 2;
+}
+
+message MultiplicationResponse {
+    double result = 1;
+}
