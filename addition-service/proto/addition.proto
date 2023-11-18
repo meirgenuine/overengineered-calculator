@@ -18,7 +18,7 @@ message AddRequest {
 }
 
 
-// The response mesage containing the result of the addition.
+// The response message containing the result of the addition.
 message AddResponse {
     double result = 1;
 }

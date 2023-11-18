@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package subtraction;
+
+option go_package = "github.com/meirgenuine/overengineered-calculator/subtraction-service/proto;subtraction";
+
+// The Subtraction service definition.
+service SubtractionService {
+    // Sends a request to subtract one number from another
+    rpc Subtract(SubtractRequest) returns (SubtractResponse) {}
+}
+
+// The request message containing the numbers to subtract
+message SubtractRequest {
+    double num1 = 1;
+    double num2 = 2;
+}
+
+// The response message containing the result of the subtraction
+message SubtractResponse {
+    double result = 1;
+}
